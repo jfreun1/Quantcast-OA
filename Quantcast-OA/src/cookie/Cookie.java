@@ -38,11 +38,11 @@ public class Cookie {
 		int year = Integer.parseInt(date.substring(0, 4));
 		int month = Integer.parseInt(date.substring(5, 7));
 		int day = Integer.parseInt(date.substring(8, 10));
-		return (year*1000) + (month*100) + (day*10);
+		return (year*10000) + (month*100) + (day*1);
 	}
 	
 	public String toString() {
-		return cookieID + " " + date;
+		return cookieID + " " + date + " " + dateToInt(this.date);
 	}
 	
 

@@ -1,7 +1,7 @@
 
-import java.util.HashMap;
 import java.util.List;
 
+import cookieBinarySearch.cookieBinarySearch;
 import cookie.Cookie;
 import parse.Parser;
 public class test {
@@ -11,9 +11,14 @@ public class test {
 		//We want a list of cookies.  
 		List<Cookie>  parsedInput = Parser.toArray("/Test Files/defaultTest.csv");
 		
-		for (Cookie C : parsedInput) {
-			System.out.println(C.toString());
+		for (int i = 0; i < parsedInput.size(); i++ ) {
+			System.out.println(i + ": " + parsedInput.get(i).toString());
 		}
+		
+		
+		System.out.println(cookieBinarySearch.binarySearch(parsedInput, "2018-12-05"));
+		
+		
 		
 
 	}
