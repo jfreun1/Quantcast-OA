@@ -8,19 +8,11 @@ public class Cookie {
 	
 	private String cookieID;
 	private String date;
-	private int occurences;
 
 	public Cookie(String cookieID, String date) {
 		this.cookieID = cookieID;
 		this.date = date;
-		this.occurences = 1;
 	}
-	
-	//We can only increase the occurence of some element by one.
-	public void increaseOccurence() {
-		occurences++;
-	}
-	
 	
 	/*
 	 * dateToInt()
@@ -33,6 +25,12 @@ public class Cookie {
 		return dateToInt(this.date);
 	}
 	
+	//Returns true or false
+	//Compares whether or not a cookie has a desired date
+	public boolean sameDate(String givenDate) {
+		return this.date.equals(givenDate);
+	}
+	
 	//Overloading for any string
 	public static int dateToInt(String date) {
 		int year = Integer.parseInt(date.substring(0, 4));
@@ -41,6 +39,37 @@ public class Cookie {
 		return (year*10000) + (month*100) + (day*1);
 	}
 	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((cookieID == null) ? 0 : cookieID.hashCode());
+		result = prime * result + ((date == null) ? 0 : date.hashCode());
+		return result;
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Cookie other = (Cookie) obj;
+		if (cookieID == null) {
+			if (other.cookieID != null)
+				return false;
+		} else if (!cookieID.equals(other.cookieID))
+			return false;
+		if (date == null) {
+			if (other.date != null)
+				return false;
+		} else if (!date.equals(other.date))
+			return false;
+		return true;
+	}
+
 	public String toString() {
 		return cookieID + " " + date + " " + dateToInt(this.date);
 	}

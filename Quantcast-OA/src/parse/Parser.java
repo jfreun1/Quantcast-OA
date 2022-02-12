@@ -5,7 +5,6 @@ import cookie.Cookie;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
 
@@ -28,9 +27,9 @@ public class Parser {
 		}
 			    
 	    while (sc.hasNext()) {
-	    	String[] currLine = sc.next().split(",", 2);
-	    	currLine[DATE] = currLine[DATE].substring(0,10);
 	    	
+	    	String[] currLine = sc.next().split(",", 2);
+	    	currLine[DATE] = currLine[DATE].substring(0,10); //we only care about the date, not the exact timestamp
 	    	values.add(new Cookie(currLine[ID], currLine[DATE]));
 	    	
 	    	
