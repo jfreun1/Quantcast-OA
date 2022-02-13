@@ -53,3 +53,8 @@ Note that, since the cookies are sorted by timestamp, we can use a modified Bina
 2.  There are no checks for properly formatted input.  That is, we must assume that the imput is given exactly.
 3.  We are not writing/saving our answer to a file.
 4.  It is possible to abstract the code more using Object Oriented Programming.
+
+##  Proof
+
+<img width="719" alt="Screen Shot 2022-02-12 at 10 09 56 PM" src="https://user-images.githubusercontent.com/54517670/153738277-8a101c2b-4757-48c6-85f8-cd188743dddc.png">
+
