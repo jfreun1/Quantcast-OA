@@ -70,6 +70,10 @@ public class Cookie {
 		return true;
 	}
 
+	public String getID() {
+		return this.cookieID;
+	}
+	
 	public String toString() {
 		return cookieID + " " + date + " " + dateToInt(this.date);
 	}

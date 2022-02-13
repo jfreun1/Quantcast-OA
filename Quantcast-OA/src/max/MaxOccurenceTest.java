@@ -51,7 +51,39 @@ class MaxOccurenceTest {
 	
 		result = MaxOccurence.maxOccurence(myList, 5, "2012-01-02");
 		assertEquals(result.size(), 1);
-//		assertTrue(result.get(0).equals(new Cookie("F", "2012-01-02")));
+		assertTrue(result.get(0).equals(new Cookie("F", "2012-01-02")));
+		
+		
+	}
+	
+	@Test
+	void multipleItemsInTheList() {
+		List<Cookie> myList = new ArrayList<>();
+		myList.add(new Cookie("A", "2018-05-02"));
+		myList.add(new Cookie("B", "2018-05-02"));
+		myList.add(new Cookie("C", "2018-05-02"));
+		myList.add(new Cookie("D", "2018-05-02"));
+		myList.add(new Cookie("E", "2018-05-02"));
+		myList.add(new Cookie("F", "2018-05-02"));
+		
+		List<Cookie> result =  MaxOccurence.maxOccurence(myList, 0, "2018-05-02");
+		assertEquals(result.size(), 6);
+		
+		
+	}
+	
+	@Test
+	void multipleItemsInTheListExtensive() {
+		List<Cookie> myList = new ArrayList<>();
+		myList.add(new Cookie("A", "2018-05-02"));
+		myList.add(new Cookie("A", "2018-05-02"));
+		myList.add(new Cookie("A", "2018-05-02"));
+		myList.add(new Cookie("B", "2018-05-02"));
+		myList.add(new Cookie("B", "2018-05-02"));
+		myList.add(new Cookie("C", "2018-05-02"));
+		
+		List<Cookie> result =  MaxOccurence.maxOccurence(myList, 0, "2018-05-02");
+		assertEquals(result.size(), 1);
 		
 		
 	}
