@@ -50,9 +50,10 @@ Note that, since the cookies are sorted by timestamp, we can use a modified Bina
 ## Room for Improvement
 
 1.  More JUnit test could be developed.
-2.  There are no checks for properly formatted input.  That is, we must assume that the imput is given exactly.
+2.  There are no checks for properly formatted input.  That is, we must assume that the input is given exactly.
 3.  We are not writing/saving our answer to a file.
 4.  It is possible to abstract the code more using Object Oriented Programming.
+5.  The user has to move their test file into the test files folder.
 
 ##  Proof
 
