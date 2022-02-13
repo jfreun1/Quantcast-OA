@@ -1,4 +1,4 @@
-# Quantcast-OA
+# Quantcast-OA by Jacob Freund
 Most Active Cookie
 
 ## Installation
