@@ -1,8 +1,6 @@
 # Quantcast-OA by Jacob Freund
 Most Active Cookie
 
-## Installation
-
 ## Usage
 
 1.  Make sure any test.csv is placed into the Test Files folder located in the src directory.
