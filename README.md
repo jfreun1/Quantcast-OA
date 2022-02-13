@@ -1,4 +1,4 @@
-# Quantcast-OA by Jacob Freund
+# Quantcast-OA by [Jacob Freund](https://www.linkedin.com/in/jacobfreund1/)
 Most Active Cookie
 
 ## Usage
