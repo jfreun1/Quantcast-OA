@@ -8,10 +8,11 @@ import max.MaxOccurence;
 public class test {
 
 	public static void main(String[] args) {
+		
 		String date = "2018-12-08";
 		System.out.println("Hello github! ");
 		//We want a list of cookies.  
-		List<Cookie>  parsedInput = Parser.toArray("/Test Files/defaultTest.csv");
+		List<Cookie>  parsedInput = Parser.toArray("defaultTest.csv");
 		
 		for (int i = 0; i < parsedInput.size(); i++ ) {
 			System.out.println(i + ": " + parsedInput.get(i).toString());

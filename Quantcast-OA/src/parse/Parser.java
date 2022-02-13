@@ -15,7 +15,7 @@ public class Parser {
 
 	public static List<Cookie> toArray(String currTest) {
 		String userDir = System.getProperty("user.dir");
-		String path = userDir + currTest;
+		String path = userDir + "/Test Files/" + currTest;
 		
 		
 		List<Cookie> values = new ArrayList<>();
