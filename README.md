@@ -21,11 +21,12 @@ javac MostActiveCookie.java
 java MostActiveCookie -f defaultTest.csv -d 2018-12-08
 ```
 
+Notice that the date is assumed to be formed YEAR-MONTH-DAY.
     
 
 ## The Challenge
 
-Write a command line program in your preferred language to process the log file and return the most active cookie for specified day. The example below shows how we'll execute your program.
+Write a command line program in your preferred language to process the log file and return the most active cookie for specified day.
 
 ## The Assumptions
 
@@ -39,4 +40,11 @@ Write a command line program in your preferred language to process the log file 
 
 ## The Solution
 
-We note 
+Note that, since the cookies are sorted by timestamp, we can use a modified Binary Search to find the date we are looking for.  Once the date is found, we can use a HashMap frequency table to quickly find a list of the most used items (if there is a tie).  Furthermore, we utilize JUnit test to tests are functions.
+
+## Room for Improvement
+
+1.  For JUnit test could be developed.
+2.  There are no checks for properly formatted input.  That is, we must assume that the imput is given exactly.
+3.  We are not writing/saving our answer to a file.
+4.  It is possible to abstract the code more using Object Oriented Programming.
