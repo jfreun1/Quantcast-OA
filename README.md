@@ -45,7 +45,7 @@ Write a command line program in your preferred language to process the log file 
 
 ## The Solution
 
-Note that, since the cookies are sorted by timestamp, we can use a modified Binary Search to find the date we are looking for.  Once the date is found, we can use a HashMap frequency table to quickly find a list of the most used items (if there is a tie).  Furthermore, we utilize JUnit test to tests are functions.
+Note that, since the cookies are sorted by timestamp, we can use a modified Binary Search to find the date we are looking for.  Once the date is found, we can use a HashMap frequency table to quickly find a list of the most used items (if there is a tie).  Furthermore, we utilize JUnit test to test our functions.
 
 ## Room for Improvement
 
