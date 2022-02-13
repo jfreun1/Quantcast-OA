@@ -4,7 +4,7 @@ Most Active Cookie
 ## Usage
 
 1.  Make sure any test.csv is placed into the Test Files folder located in the src directory.
-2.  CD into the src. directory
+2.  CD into the src directory
 3.  javac MostActiveCookies.java
 4.  Run file with the following command structure: java MostActiveCookie -f FILENAME.csv -d DATE
 
