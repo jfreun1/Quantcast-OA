@@ -16,13 +16,11 @@ For Example:
 javac MostActiveCookie.java
 ```
 
-```bash
-java MostActiveCookie -f defaultTest.csv -d 2018-12-08
-``'
 
 ```bash
-pip install foobar
+java MostActiveCookie -f defaultTest.csv -d 2018-12-08
 ```
+
     
 
 ## The Challenge
