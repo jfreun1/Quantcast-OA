@@ -19,6 +19,13 @@ javac MostActiveCookie.java
 java MostActiveCookie -f defaultTest.csv -d 2018-12-08
 ```
 
+produces the following output:
+```bash
+SAZuXPGUrfbcn5UA
+fbcn5UAVanZf6UtG
+4sMM2LxV07bPJzwf
+```
+
 Notice that the date is assumed to be formed YEAR-MONTH-DAY.
     
 
