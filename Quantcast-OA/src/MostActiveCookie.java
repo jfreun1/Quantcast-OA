@@ -5,7 +5,6 @@ import cookie.Cookie;
 import parse.Parser;
 import max.MaxOccurence;
 public class MostActiveCookie {
-
 	static int FILE = 0;
 	static int DATE = 1;
 	public static void main(String[] args) {
