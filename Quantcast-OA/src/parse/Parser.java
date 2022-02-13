@@ -12,8 +12,9 @@ public class Parser {
 	
 	static int ID = 0;
 	static int DATE = 1;
-
-	public static List<Cookie> toArray(String currTest) {
+	
+	//reads the .csv and pares into a list of cookies
+	public static List<Cookie> toList(String currTest) {
 		String userDir = System.getProperty("user.dir");
 		String path = userDir + "/Test Files/" + currTest;
 		
@@ -37,5 +38,22 @@ public class Parser {
 	   
 	    
 	    return values;
+	}
+	
+	
+	//parses the commandLine and returns an array of two elements representing the two arguments
+	static int FILE = 0;
+	//static int DATE = 1; (from before)
+	public static String[] parseCommandLine(String[] args) {
+		String[] result = new String[2];
+	     //locate switches.
+	     for(int i=0; i < args.length; i++) {
+	       if(args[i].startsWith("-f")){
+	    	   result[FILE] = args[++i];
+	       } else if (args[i].startsWith("-d")) {
+	    	   result[DATE] = args[++i];
+	       }
+	     }
+		return result;
 	}
 }

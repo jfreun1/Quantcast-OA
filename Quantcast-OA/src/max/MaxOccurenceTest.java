@@ -15,6 +15,9 @@ class MaxOccurenceTest {
 		List<Cookie> emptyList = MaxOccurence.maxOccurence(new ArrayList<Cookie>(), 0, "2022-02-12");
 		assertEquals(emptyList.size(), 0);
 		
+		List<Cookie> emptyList2 = MaxOccurence.maxOccurence(new ArrayList<Cookie>(), -1, "2022-02-12");
+		assertEquals(emptyList2.size(), 0);
+		
 	}
 	
 	@Test

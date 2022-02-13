@@ -31,7 +31,9 @@ public class Cookie {
 		return this.date.equals(givenDate);
 	}
 	
-	//Overloading for any string
+	//Overloading for any string 
+	//This method returns the date an integer such that if date(A) < date(B)
+	//then asInt(A) < asInt(B)
 	public static int dateToInt(String date) {
 		int year = Integer.parseInt(date.substring(0, 4));
 		int month = Integer.parseInt(date.substring(5, 7));
@@ -70,10 +72,14 @@ public class Cookie {
 		return true;
 	}
 
+	
+	//returns the ID
 	public String getID() {
 		return this.cookieID;
 	}
 	
+	
+	//for debugging purposed
 	public String toString() {
 		return cookieID + " " + date + " " + dateToInt(this.date);
 	}
